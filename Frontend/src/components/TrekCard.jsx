@@ -1,34 +1,19 @@
-import { Link } from "react-router-dom";
-
-function TrekCard({ trek }) {
+const TrekCard = ({ image, title, days, price }) => {
   return (
-    <div className="bg-white shadow-lg rounded-xl overflow-hidden">
-      <img
-        src={trek.image}
-        alt={trek.name}
-        className="h-60 w-full object-cover"
-      />
+    <div className="trek-card">
+      <img src={image} alt="" />
 
-      <div className="p-4">
-        <h2 className="text-2xl font-bold">{trek.name}</h2>
+      <div className="trek-content">
+        <h3>{title}</h3>
 
-        <p className="text-gray-600 mt-2">{trek.location}</p>
+        <p>{days}</p>
 
-        <div className="flex justify-between mt-4">
-          <span className="font-bold text-green-600">
-            ₹ {trek.price}
-          </span>
+        <h4>₹{price}</h4>
 
-          <Link
-            to={`/treks/${trek.id}`}
-            className="bg-black text-white px-4 py-2 rounded"
-          >
-            View
-          </Link>
-        </div>
+        <button>View Details</button>
       </div>
     </div>
   );
-}
+};
 
 export default TrekCard;

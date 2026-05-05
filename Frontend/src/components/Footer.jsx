@@ -1,9 +1,11 @@
-function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-black text-white text-center py-6 mt-10">
-      <p>© 2026 DevBhoomiTrekker. All rights reserved.</p>
+    <footer className="footer">
+      <h2>TrekBeyond</h2>
+
+      <p>Explore the Himalayas with us.</p>
     </footer>
   );
-}
+};
 
 export default Footer;
