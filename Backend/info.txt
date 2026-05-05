@@ -3,3 +3,5 @@ const app = require("app"); // CommonJS method to write nodejs code
 import app from app; // Module ES6 method to write nodejs code
 
 nodemon is used for reloading server on every change
+
+mongoose is used to connect mongodb and nodejs
