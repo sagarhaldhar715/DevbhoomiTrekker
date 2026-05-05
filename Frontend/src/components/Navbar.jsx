@@ -1,38 +1,29 @@
-import { Link } from "react-router-dom";
-import { useAuth } from "../hooks/useAuth";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-function Navbar() {
-  const { user, logout } = useAuth();
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-black text-white px-8 py-4 flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold text-green-400">
-        DevBhoomiTrekker
-      </Link>
+    <nav className="navbar">
+      <div className="logo">DevBhoomiTrekker</div>
 
-      <div className="flex gap-6 items-center">
-        <Link to="/">Home</Link>
-        <Link to="/treks">Treks</Link>
+      <ul className={`nav-links ${open ? "active" : ""}`}>
+        <li>Home</li>
+        <li>Treks</li>
+        <li>Destinations</li>
+        <li>About</li>
+        <li>Gallery</li>
+        <li>Contact</li>
+      </ul>
 
-        {user ? (
-          <>
-            <Link to="/dashboard">Dashboard</Link>
-            <button
-              onClick={logout}
-              className="bg-red-500 px-4 py-2 rounded"
-            >
-              Logout
-            </button>
-          </>
-        ) : (
-          <>
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
-          </>
-        )}
+      <button className="book-btn">Book Now</button>
+
+      <div className="menu-icon" onClick={() => setOpen(!open)}>
+        {open ? <X size={30} /> : <Menu size={30} />}
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
