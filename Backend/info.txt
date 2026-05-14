@@ -5,3 +5,5 @@ import app from app; // Module ES6 method to write nodejs code
 nodemon is used for reloading server on every change
 
 mongoose is used to connect mongodb and nodejs
+
+http://localhost:5000/user/create-user
