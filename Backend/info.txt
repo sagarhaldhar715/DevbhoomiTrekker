@@ -4,4 +4,4 @@ import app from app; // Module ES6 method to write nodejs code
 
 nodemon is used for reloading server on every change
 
-mongoose is used to connect mongodb and nodejs
+mongoose is a library that is  used to connect mongodb and nodejs
