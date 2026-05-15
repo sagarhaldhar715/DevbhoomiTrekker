@@ -5,6 +5,7 @@ import About from "../components/About";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 
+
 const Home = () => {
   return (
     <>
