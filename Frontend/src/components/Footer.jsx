@@ -1,4 +1,16 @@
-const Footer = () => {
+// src/components/Footer.jsx
+
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+
+function Footer() {
   return (
     <footer className="bg-zinc-950 text-white border-t border-white/10 mt-20">
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -65,6 +77,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
