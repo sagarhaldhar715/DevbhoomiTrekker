@@ -34,13 +34,36 @@ const Treks = () => {
   ];
 
   return (
-    <section className="treks">
-      <h2>Find Your Next Adventure</h2>
+    <section className="bg-slate-50 py-24 px-6">
 
-      <div className="trek-grid">
-        {trekData.map((trek, index) => (
-          <TrekCard key={index} {...trek} />
-        ))}
+      <div className="max-w-7xl mx-auto">
+
+        {/* Heading */}
+        <div className="text-center">
+
+          <p className="text-green-500 font-semibold tracking-widest uppercase">
+            Popular Treks
+          </p>
+
+          <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900">
+            Find Your Next Adventure
+          </h2>
+
+          <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Discover breathtaking Himalayan destinations, thrilling trails,
+            snowy mountains, and unforgettable trekking experiences curated
+            for adventure lovers.
+          </p>
+        </div>
+
+        {/* Trek Grid */}
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          {trekData.map((trek, index) => (
+            <TrekCard key={index} {...trek} />
+          ))}
+
+        </div>
       </div>
     </section>
   );
