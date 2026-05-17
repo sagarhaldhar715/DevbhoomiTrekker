@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -12,6 +13,12 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
+=======
+import AppRoutes from "./routes/AppRoutes";
+
+function App() {
+  return <AppRoutes />;
+>>>>>>> 7cb0720 (frontend bigad diya)
 }
 
 export default App;
