@@ -1,4 +1,9 @@
-import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar.jsx";
+import Hero from "../components/Hero.jsx";
+import Treks from "../components/Treks.jsx";
+import About from "../components/About.jsx";
+import CTA from "../components/CTA.jsx";
+import Footer from "../components/Footer.jsx";
 
 function Home() {
   return (
