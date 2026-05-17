@@ -10,12 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "axios": "^1.15.2",
-=======
     "@tailwindcss/vite": "^4.3.0",
     "axios": "^1.16.1",
->>>>>>> 7cb0720 (frontend bigad diya)
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.16.0",
     "react": "^19.2.5",
